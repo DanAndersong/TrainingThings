@@ -31,7 +31,7 @@ public class NumberSystems {
         int i10 = 0;
         int i2 = 0b0;
         int i8 = 0;
-        int i16= 0;
+        int i16= 0x0;
         out.println(i10 + "\n" + i2 + "\n" + i8 + "\n" + i16 + "\n");
         
         long l10 = 123456789L;
