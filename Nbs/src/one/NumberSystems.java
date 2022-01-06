@@ -1,5 +1,5 @@
 
-package nbs;
+package one;
 
 import static java.lang.System.out;
 
@@ -15,7 +15,7 @@ public class NumberSystems {
         
     }
     
-    static void task (){
+    public static void task (){
         byte b10 = 12;
         byte b2 = 0b1100;
         byte b8 = 014;
