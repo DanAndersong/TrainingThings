@@ -1,10 +1,7 @@
-package four;
+package hm;
 
-/**
- *
- * @author user
- */
-public class EmployeeTest {
+
+public class Programm {
     public static void main(String[] args) {
         Employee employee1 = new Employee("1", 20, 1000, "D1");
         Employee employee2 = new Employee("2", 21, 1100, "D1");

@@ -1,12 +1,6 @@
-package four;
+package hm;
 
-import java.util.ArrayList;
-import java.util.List;
 
-/**
- *
- * @author user
- */
 public class StudentTest {
     public static void main(String[] args) {
         Student student1 = new Student("name","surname",1);

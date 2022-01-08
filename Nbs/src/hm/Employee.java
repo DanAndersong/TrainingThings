@@ -1,27 +1,36 @@
-package four;
+package hm;
 
-/**
- *
- * @author user
- */
 public class Employee {
-    private static int employeeID = 0;
+    private static int employeeIDs;
     
     private int id;
-    private String surname;
+    public String surname;
     private int age;
     private double salary;
     private String department;
 
-    public Employee(String surname, int age, double salary, String department) {
-        employeeID++;
-        this.id = employeeID;
+    Employee(String surname, int age, double salary, String department) {
+        this(salary,department);
+        setNewId();
         this.surname = surname;
         this.age = age;
-        this.salary = salary;
-        this.department = department;
     }
     
+    private void setNewId() {
+        this.id = ++employeeIDs;
+    }
+    
+    public Employee(String surname, int age) {
+        setNewId();
+        this.surname = surname;
+        this.age = age;
+    }
+
+    private Employee(double salary, String department) {
+        this.salary = salary;
+        this.department = department;
+        setNewId();
+    }
     
     public void multiplySalary(int x) {
         salary *= x;
@@ -31,8 +40,5 @@ public class Employee {
     public String toString() {
         return "Employee{" + "id=" + id + ", surname=" + surname + ", age=" + age + ", salary=" + salary + ", department=" + department + '}';
     }
-    
-    
-    
            
 }
