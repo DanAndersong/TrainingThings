@@ -9,17 +9,10 @@ import java.util.List;
  */
 public class StudentTest {
     public static void main(String[] args) {
-        Student student1 = new Student();
-        Student student2 = new Student();
-        Student student3 = new Student();
-        student1.economicsGrade = 1;
-        student1.foreignGrade= 1;
-        student2.economicsGrade = 2;
-        student2.foreignGrade= 2;
-        student3.economicsGrade = 3;
-        student3.foreignGrade= 3;
-        
-        getAvgGrade(student1);
+        Student student1 = new Student("name","surname",1);
+        Student student2 = new Student("name","surname",1,2,3,4);
+        System.out.println(student1.toString());
+        System.out.println(student2.toString());
         
     }
     
@@ -27,24 +20,87 @@ public class StudentTest {
     static void getAvgGrade (Student student) {
         int sum;
         
-        sum =   student.mathGrade+
-                student.economicsGrade+
-                student.foreignGrade;
+        sum =   student.getMathGrade()+
+                student.getEconomicsGrade()+
+                student.getForeignGrade();
         
         System.out.println(sum / 3d);
     }
 }
 
 class Student {
-    String name;
-    String surName;
-    int mathGrade;
-    int economicsGrade;
-    int foreignGrade;
+    private String name;
+    private String surName;
+    private int mathGrade;
+    private int economicsGrade;
+    private int foreignGrade;
     
     int course;
-    
-   
+
+    public Student(String name, String surName, int course, int mathGrade, int economicsGrade, int foreignGrade) {
+        this(name,surName,course);       
+        this.mathGrade = mathGrade;
+        this.economicsGrade = economicsGrade;
+        this.foreignGrade = foreignGrade;
+    }
+
+    public Student(String name, String surName, int course) {
+        this.name = name;
+        this.surName = surName;
+        this.course = course;
+    }
+
+    public Student() {
+        
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurName() {
+        return surName;
+    }
+
+    public int getMathGrade() {
+        return mathGrade;
+    }
+
+    public int getEconomicsGrade() {
+        return economicsGrade;
+    }
+
+    public int getForeignGrade() {
+        return foreignGrade;
+    }
+
+    public int getCourse() {
+        return course;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSurName(String surName) {
+        this.surName = surName;
+    }
+
+    public void setMathGrade(int mathGrade) {
+        this.mathGrade = mathGrade;
+    }
+
+    public void setEconomicsGrade(int economicsGrade) {
+        this.economicsGrade = economicsGrade;
+    }
+
+    public void setForeignGrade(int foreignGrade) {
+        this.foreignGrade = foreignGrade;
+    }
+
+    public void setCourse(int course) {
+        this.course = course;
+    }
 
     private boolean isNumeric(String spl) {
         try {
@@ -68,4 +124,9 @@ class Student {
 //        }
 //        return sum / count;
 //    }
+
+    @Override
+    public String toString() {
+        return "Student{" + "name=" + name + ", surName=" + surName + ", mathGrade=" + mathGrade + ", economicsGrade=" + economicsGrade + ", foreignGrade=" + foreignGrade + ", course=" + course + '}';
+    }
 }
