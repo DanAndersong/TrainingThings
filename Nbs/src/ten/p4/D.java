@@ -28,7 +28,6 @@ public class D {
         
         //E
         E e  = new E();
-        int s = e.getE();
         
     }
 }

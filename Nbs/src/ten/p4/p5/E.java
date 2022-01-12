@@ -15,9 +15,4 @@ public class E {
     public E() {
     }
 
-    public int getE() {
-        return e;
-    }
-    
-    
 }
