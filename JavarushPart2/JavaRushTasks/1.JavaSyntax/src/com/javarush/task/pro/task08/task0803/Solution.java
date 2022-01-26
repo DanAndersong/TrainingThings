@@ -8,9 +8,12 @@ import java.util.Scanner;
 
 public class Solution {
 
+
     public static void main(String[] args) {
-        int[] intArray = getArrayOfTenElements();
-        System.out.println(min(intArray));
+//        int[] intArray = getArrayOfTenElements();
+//        System.out.println(min(intArray));
+
+
     }
 
     public static int min(int[] ints) {
