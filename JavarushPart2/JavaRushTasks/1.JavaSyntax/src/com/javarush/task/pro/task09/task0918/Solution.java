@@ -21,8 +21,13 @@ public class Solution {
         return stringBuilder;
     }
 
+//    public static StringBuilder replace1(String string, String str, int start, int end) {
+//        StringBuilder stringBuilder = new StringBuilder(string);
+//        return stringBuilder.replace(start,end,str);
+//    }
+
+
     public static StringBuilder replace(String string, String str, int start, int end) {
-        StringBuilder stringBuilder = new StringBuilder(string);
-        return stringBuilder.replace(start,end,str);
+        return new StringBuilder(string).replace(start,end,str);
     }
 }
