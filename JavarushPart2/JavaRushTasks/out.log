@@ -2854,3 +2854,168 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: -1
 2022-01-30 21:17:13 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
 2022-01-30 21:17:13 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
 2022-01-30 21:17:15 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2022-01-31 11:06:42 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2022-01-31 11:06:42 INFO  AnalyticsService.run(89) - 
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:349)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:292)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:287)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:654)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.onCertificate(CertificateMessage.java:473)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.consume(CertificateMessage.java:369)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:392)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:443)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:421)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:182)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:171)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1408)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1314)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:440)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:411)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:394)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:82)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:439)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:306)
+	at java.base/sun.security.validator.Validator.validate(Validator.java:264)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:313)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:222)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:129)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:638)
+	... 27 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:434)
+	... 33 more
+2022-01-31 11:06:42 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-01-31 11:06:43 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-01-31 11:06:43 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-01-31 11:06:43 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-01-31 11:06:44 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-01-31 11:06:44 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-01-31 11:06:44 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-01-31 11:06:45 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-01-31 11:06:46 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-01-31 11:06:46 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2022-02-02 22:19:56 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2022-02-02 22:19:56 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 3.56 ----------
+
+2022-02-02 22:19:56 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2022-02-02 22:19:56 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
+2022-02-02 22:19:56 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
+2022-02-02 22:19:57 INFO  ApacheHttpClient.startGA(36) - GAService started.
+2022-02-03 10:03:26 INFO  ProjectStartupHandler.projectClosing(155) - ---------- Project closed ----------
+
+2022-02-03 10:03:26 INFO  AnalyticsService.run(89) - 
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:349)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:292)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:287)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:654)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.onCertificate(CertificateMessage.java:473)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.consume(CertificateMessage.java:369)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:392)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:443)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:421)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:182)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:171)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1408)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1314)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:440)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:411)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:394)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:353)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:141)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at com.homework.plugin.analytics.AnalyticsService$1.run(AnalyticsService.java:82)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:439)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:306)
+	at java.base/sun.security.validator.Validator.validate(Validator.java:264)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:313)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:222)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:129)
+	at java.base/sun.security.ssl.CertificateMessage$T12CertificateConsumer.checkServerCerts(CertificateMessage.java:638)
+	... 27 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:434)
+	... 33 more
+2022-02-03 10:03:26 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-02-03 10:03:26 INFO  PluginProjectService.dispose(41) - PluginProjectService for disposed.
+2022-02-03 22:15:35 INFO  ProjectStartupHandler.runActivity(74) - ---------- Project opened ----------
+2022-02-03 22:15:35 INFO  ProjectStartupHandler.runActivity(75) - ---------- Version 3.56 ----------
+
+2022-02-03 22:15:35 INFO  ApacheHttpClient.isSessionAppropriateWithSecretKey(602) - Waiting for server response.
+2022-02-03 22:15:35 INFO  ApacheHttpClient.refreshUserInfo(305) - responseCode = 200
+2022-02-03 22:15:36 INFO  ApacheHttpClient.refreshUserInfo(311) - User information received.
+2022-02-03 22:15:36 INFO  ApacheHttpClient.startGA(36) - GAService started.
+2022-02-03 22:15:38 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-02-03 22:15:39 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2022-02-03 22:15:54 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2022-02-03 22:15:54 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(77) - File created :/Users/user/java/TrainingThings/JavarushPart2/JavaRushTasks/1.JavaSyntax/src/com/javarush/task/pro/task11
+2022-02-03 22:15:54 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(77) - File created :/Users/user/java/TrainingThings/JavarushPart2/JavaRushTasks/1.JavaSyntax/src/com/javarush/task/pro/task11/task1101
+2022-02-03 22:16:19 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-02-03 22:16:19 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2022-02-03 22:16:21 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2022-02-03 22:16:21 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(77) - File created :/Users/user/java/TrainingThings/JavarushPart2/JavaRushTasks/1.JavaSyntax/src/com/javarush/task/pro/task11/task1102
+2022-02-03 22:17:27 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-02-03 22:17:29 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-02-03 22:17:31 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2022-02-03 22:17:31 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-02-03 22:17:32 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-02-03 22:17:33 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2022-02-03 22:17:39 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2022-02-03 22:17:39 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(77) - File created :/Users/user/java/TrainingThings/JavarushPart2/JavaRushTasks/1.JavaSyntax/src/com/javarush/task/pro/task11/task1103
+2022-02-03 22:18:46 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-02-03 22:18:47 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-02-03 22:18:47 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2022-02-03 22:18:48 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-02-03 22:18:50 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-02-03 22:18:50 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2022-02-03 22:18:52 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2022-02-03 22:18:52 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(77) - File created :/Users/user/java/TrainingThings/JavarushPart2/JavaRushTasks/1.JavaSyntax/src/com/javarush/task/pro/task11/task1104
+2022-02-03 22:18:52 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2022-02-03 22:20:30 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-02-03 22:20:30 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-02-03 22:20:34 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2022-02-03 22:20:46 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-02-03 22:20:46 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-02-03 22:20:50 INFO  ApacheHttpClient.completed(32) - responseCode = 200
+2022-02-03 22:20:50 INFO  ApacheHttpClient.getTask(488) - responseCode = 200
+2022-02-03 22:20:53 INFO  ApacheHttpClient.getWebResourceAsStream(502) - responseCode = 200
+2022-02-03 22:20:53 INFO  ApacheHttpClient.getFilteredTasks(336) - responseCode = 200
+2022-02-03 22:20:55 INFO  ApacheHttpClient.getTaskTemplateInfo(353) - responseCode = 200
+2022-02-03 22:20:55 INFO  TaskInfoSelectorMouseListener.createDirectoryRecursive(77) - File created :/Users/user/java/TrainingThings/JavarushPart2/JavaRushTasks/1.JavaSyntax/src/com/javarush/task/pro/task11/task1105
