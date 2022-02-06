@@ -15,4 +15,5 @@ public class Outer {
             System.out.println("Создание объекта вложенного класса");
         }
     }
+
 }
