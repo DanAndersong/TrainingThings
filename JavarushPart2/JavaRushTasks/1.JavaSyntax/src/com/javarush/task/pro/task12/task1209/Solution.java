@@ -25,6 +25,9 @@ public class Solution {
     }
 
     public static void paySalary(String name) {
-        //напишите тут ваш код
+        if(waitingEmployees.contains(name)) {
+            alreadyGotSalaryEmployees.add(name);
+            waitingEmployees.set(waitingEmployees.indexOf(name),null);
+        }
     }
 }
