@@ -1,2 +1,4 @@
-package stuff;public class Tech {
+package stuff;
+
+public class Tech {
 }

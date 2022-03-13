@@ -1,2 +1,4 @@
-package stuff;public class Lawyer {
+package stuff;
+
+public class Lawyer {
 }

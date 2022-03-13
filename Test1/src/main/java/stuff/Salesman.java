@@ -1,2 +1,4 @@
-package stuff;public class Salesman {
+package stuff;
+
+public class Salesman {
 }

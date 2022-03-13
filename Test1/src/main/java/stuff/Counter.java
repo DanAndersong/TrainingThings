@@ -1,2 +1,4 @@
-package stuff;public class Counter {
+package stuff;
+
+public class Counter {
 }
