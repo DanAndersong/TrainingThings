@@ -10,33 +10,39 @@
     <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_margin="20dp"
         android:layout_height="200dp"
+        android:src="@drawable/logo"
         android:background="@color/black"></ImageView>
 
     <RelativeLayout
-        android:layout_below="@id/logo"
         android:id="@+id/quantity_and_price"
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="300dp"
+        android:layout_below="@id/logo">
+
         <Button
             android:layout_width="100dp"
             android:layout_height="60dp"
             android:layout_centerVertical="true"
             android:layout_toEndOf="@id/quantity_text_view"
-            android:backgroundTint="#c0c0c0"
+            android:backgroundTint="#964b00"
             android:onClick="incrementCoffeeNumber"
-            android:shadowColor="@color/black"
             android:text="+"
-            android:textColor="@color/black" />
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:textSize="15dp" />
 
         <TextView
             android:id="@+id/quantity_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:padding="30dp"
+            android:layout_margin="30dp"
             android:text="0"
             android:textColor="@color/black"
+            android:fontFamily="sans-serif-light"
             android:textSize="30sp" />
 
         <Button
@@ -44,11 +50,12 @@
             android:layout_height="60dp"
             android:layout_centerVertical="true"
             android:layout_toStartOf="@id/quantity_text_view"
-            android:backgroundTint="#c0c0c0"
+            android:backgroundTint="#964b00"
             android:onClick="decrementCoffeeNumber"
-            android:shadowColor="@color/black"
             android:text="-"
-            android:textColor="@color/black" />
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:textSize="15dp" />
 
         <TextView
             android:id="@+id/price_text_view"
@@ -59,18 +66,27 @@
             android:padding="20dp"
             android:text="$0"
             android:textColor="@color/black"
+            android:fontFamily="sans-serif-light"
             android:textSize="30sp" />
     </RelativeLayout>
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/quantity_and_price"
+        android:src="@drawable/background_new"
+
+        ></ImageView>
     <Button
         android:layout_below="@id/quantity_and_price"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_centerInParent="true"
         android:layout_margin="70dp"
-        android:backgroundTint="#c0c0c0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#964b00"
         android:onClick="submitOrder"
-        android:shadowColor="@color/black"
         android:text="ORDER"
-        android:textColor="@color/black" />
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-light"/>
 
 </RelativeLayout>
