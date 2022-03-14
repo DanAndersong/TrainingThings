@@ -18,9 +18,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    /**
-     * This method is called when the order button is clicked.
-     */
     public void submitOrder(View view) {
         displayPrice();
     }
@@ -39,9 +36,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    /**
-     * This method displays the given quantity value on the screen.
-     */
     private void displayQuantity() {
         TextView quantityTextView = findViewById(R.id.quantity_text_view);
         quantityTextView.setText(String.valueOf(coffeeCount));
