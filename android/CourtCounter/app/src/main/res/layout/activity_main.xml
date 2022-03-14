@@ -28,6 +28,8 @@
                 android:textColor="#595959"
                 android:padding="20dp"
                 android:gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="14sp"
                 />
 
             <TextView
@@ -40,6 +42,7 @@
                 android:text="0"
                 android:textColor="#595959"
                 android:textSize="90dp"
+                android:fontFamily="sans-serif-light"
                 />
 
             <Button
@@ -98,6 +101,8 @@
                 android:textColor="#595959"
                 android:padding="20dp"
                 android:gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="14sp"
                 />
 
             <TextView
@@ -110,6 +115,7 @@
                 android:text="0"
                 android:textColor="#595959"
                 android:textSize="90dp"
+                android:fontFamily="sans-serif-light"
                 />
 
             <Button
