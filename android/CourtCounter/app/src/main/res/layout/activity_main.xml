@@ -79,6 +79,10 @@
                 android:onClick="incrementScore"
                 />
         </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#d1d1d1"/>
 
         <LinearLayout
             android:id="@+id/team_b_layout"
