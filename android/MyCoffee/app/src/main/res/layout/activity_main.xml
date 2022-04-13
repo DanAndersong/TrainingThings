@@ -29,7 +29,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/coffeeChoice"
+        android:id="@+id/toppings_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
@@ -38,7 +38,14 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_width="wrap_content"
-            android:text="ARRAY" />
+            android:text="@string/toppings" />
+
+        <CheckBox
+            android:id="@+id/whipped_cream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/whipped_cream"
+            android:onClick="addTopping"/>
 
     </LinearLayout>
 

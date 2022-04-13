@@ -2,15 +2,22 @@ package com.example.mycoffee;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import java.text.NumberFormat;
+import java.util.HashSet;
+import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
     private int price = 5;
     private int quantity = 0;
+    private Set<Toppings> toppings = new HashSet<>();
+
     String message;
     String name;
 
@@ -18,6 +25,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+
+    @SuppressLint("NonConstantResourceId")
+    public void addTopping(View view) {
+        boolean isChecked = ((CheckBox) view).isChecked();
+
+        switch (view.getId()) {
+            case R.id.whipped_cream:
+                if (isChecked) {
+                    toppings.add(Toppings.WrappedCream);
+                } else {
+                    toppings.remove(Toppings.WrappedCream);
+                }
+        }
+        System.out.println(toppings.size());
     }
 
     public void submitOrder(View view) {
